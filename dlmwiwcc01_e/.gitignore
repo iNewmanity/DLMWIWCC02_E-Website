@@ -12,6 +12,10 @@ node_modules
 .DS_Store
 Thumbs.db
 
+# IDE
+.vscode
+.idea
+
 # Env
 .env
 .env.*
