@@ -18,7 +18,7 @@
     <div class="mr-4 ml-4">
         {@render children()}
     </div>
-    <div class="bottom-0">
+    <div class="sticky bottom-0">
         <Footer/>
     </div>
 </div>
