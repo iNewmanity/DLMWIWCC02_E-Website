@@ -2,3 +2,4 @@
 .sveltekit
 .svelte
 .node_modules
+.env
