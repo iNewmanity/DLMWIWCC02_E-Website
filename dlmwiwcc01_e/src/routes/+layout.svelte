@@ -6,7 +6,10 @@
 	let { children } = $props();
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<svelte:head>
+    <link rel="icon" href={favicon} />
+    <title>Mieter Cloud</title>
+</svelte:head>
 <div class="mt-4 mr-4 ml-4">
     <Navigation/>
 </div>
