@@ -1,5 +1,7 @@
 <script lang="ts">
     import Markdown from '$lib/components/custom/markdown/markdown.svelte';
+
+    import imprint from '$lib/assets/imprint.md?raw';
 </script>
 
 <div class="m-4">
@@ -9,6 +11,6 @@
     <p class="text-muted-foreground text-l leading-7">
         Last Updated: 2026-01-04
     </p>
-    <Markdown markdown="#This is a Text" />
+    <Markdown markdown={imprint} />
 
 </div>

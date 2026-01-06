@@ -1,18 +1,19 @@
 <script lang="ts">
-    import {marked} from 'marked';
+    import { marked } from 'marked';
+    import DOMPurify from 'dompurify';
+    import { onMount } from 'svelte';
 
-    let {markdown} = $props();
+    let { markdown = '' } = $props();
 
-    marked.use({
-        async: true,
-        pedantic: false,
-        gfm: true,
+    const htmlContent = $derived(marked.parse(markdown));
+
+    let cleanHtml = $state('');
+
+    $effect(() => {
+        cleanHtml = DOMPurify.sanitize(htmlContent as string);
     });
-
-    function renderMarkdown() {
-        const result = marked.parse(markdown);
-        return result;
-    }
 </script>
 
-{@html renderMarkdown()}
+<div class="prose max-w-none">
+    {@html cleanHtml || htmlContent}
+</div>
