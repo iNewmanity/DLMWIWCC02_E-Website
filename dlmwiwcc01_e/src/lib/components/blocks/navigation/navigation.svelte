@@ -22,7 +22,7 @@
             <NavigationMenu.Link>
                 {#snippet child()}
                     <a href="/" class={navigationMenuTriggerStyle()}>
-                        <img src={Icon} alt="Mieter Cloud" class="h-6 w-auto" />
+                        <enhanced:img src={Icon} alt="Mieter Cloud" class="h-6 w-auto"/>
                         Mieter Cloud
                     </a>
                 {/snippet}
@@ -31,7 +31,7 @@
         <NavigationMenu.Item>
             <NavigationMenu.Link>
                 {#snippet child()}
-                    <a href="/blog" class={navigationMenuTriggerStyle()}>Blog</a>
+                    <a data-sveltekit-preload-data="tap" href="/blog" class={navigationMenuTriggerStyle()}>Blog</a>
                 {/snippet}
             </NavigationMenu.Link>
         </NavigationMenu.Item>
