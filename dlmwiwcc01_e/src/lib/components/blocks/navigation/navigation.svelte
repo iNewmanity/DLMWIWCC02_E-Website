@@ -3,7 +3,7 @@
     import { cn } from "$lib/utils.js";
     import { navigationMenuTriggerStyle } from "$lib/components/ui/navigation-menu/navigation-menu-trigger.svelte";
     import type { HTMLAttributes } from "svelte/elements";
-    import Icon from "$lib/assets/favicon.png";
+    import Icon from "/favicon.png";
 
     import { IsMobile } from "$lib/hooks/is-mobile.svelte.js";
 
