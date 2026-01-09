@@ -3,6 +3,7 @@
     import { Label } from "$lib/components/ui/label/index.js";
     import * as Card from "$lib/components/ui/card/index.js";
     import Markdown from '$lib/components/custom/markdown/markdown.svelte';
+    import { formatDate } from '$lib/services/utilities.service';
 
     let { title, author, released, content } = $props();
 </script>
@@ -13,7 +14,7 @@
     <Card.Header>
         <Card.Title>{title}</Card.Title>
         <Card.Description
-        >Released by {author} on {released}</Card.Description
+        >Released by {author} on {formatDate(released)}</Card.Description
         >
     </Card.Header>
     <Card.Content>
