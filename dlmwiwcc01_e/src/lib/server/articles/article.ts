@@ -2,7 +2,6 @@ import {Client, Query, TablesDB} from "node-appwrite"
 import { DATABASE_ID, SITES_TABLE_ID } from '$env/static/private';
 import {appwriteClient} from "$lib/server/appwrite/appwrite";
 
-
 const tablesDB = new TablesDB(appwriteClient);
 
 interface Content {
@@ -40,4 +39,3 @@ export async function getArticlesForSite(path: string) {
         console.log(error);
     }
 }
-

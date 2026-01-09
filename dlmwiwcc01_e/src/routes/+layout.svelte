@@ -12,14 +12,14 @@
     <link rel="icon" href={favicon} />
     <title>Mieter Cloud</title>
 </svelte:head>
-<div class="w-full h-full">
+<div class="flex min-h-screen flex-col overflow-x-hidden">
     <div class="mt-4 mr-4 ml-4">
         <Navigation/>
     </div>
-    <div class="mr-4 ml-4">
+    <div class="mx-4 flex-grow">
         {@render children()}
     </div>
-    <div class="sticky bottom-0">
+    <div class="mt-auto">
         <Footer/>
     </div>
 </div>

@@ -31,13 +31,6 @@
         <NavigationMenu.Item>
             <NavigationMenu.Link>
                 {#snippet child()}
-                    <a href="/docs" class={navigationMenuTriggerStyle()}>Docs</a>
-                {/snippet}
-            </NavigationMenu.Link>
-        </NavigationMenu.Item>
-        <NavigationMenu.Item>
-            <NavigationMenu.Link>
-                {#snippet child()}
                     <a href="/blog" class={navigationMenuTriggerStyle()}>Blog</a>
                 {/snippet}
             </NavigationMenu.Link>
