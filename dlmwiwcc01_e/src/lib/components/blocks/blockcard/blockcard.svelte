@@ -10,7 +10,7 @@
 
 
 
-<Card.Root class="-my-4 w-full max-w-sm">
+<Card.Root class="-my-4 w-full max-w-full m-2">
     <Card.Header>
         <Card.Title>{title}</Card.Title>
         <Card.Description
