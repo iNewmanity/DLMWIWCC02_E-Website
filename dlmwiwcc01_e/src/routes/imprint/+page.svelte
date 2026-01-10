@@ -11,7 +11,7 @@
 
 </script>
 
-<div class="m-4">
+<div class="m-4 mx-8">
     <h1 class="scroll-m-20 text-2xl font-extrabold tracking-tight text-balance">
         {articles[0].title}
     </h1>

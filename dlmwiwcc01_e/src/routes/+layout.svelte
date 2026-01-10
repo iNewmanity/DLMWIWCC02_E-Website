@@ -16,7 +16,7 @@
     <div class="mt-4 mr-4 ml-4">
         <Navigation/>
     </div>
-    <div class="mx-4 flex-grow">
+    <div class="flex-grow">
         {@render children()}
     </div>
     <div class="mt-auto">
