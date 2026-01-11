@@ -7,7 +7,7 @@
     let articles = $derived(data.contents);
 </script>
 
-<div class="flex flex-col gap-4 w-full mt-4">
+<div class="flex flex-col gap-4 w-full mt-4 overflow-y-scroll">
     {#each articles as article}
         <div>
             <Blockcard title={article.title} author={article.author} released={article.released} content={article.text} />
